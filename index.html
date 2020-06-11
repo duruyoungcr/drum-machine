@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="drum-machine">
+        <div class="keypads">
+          <div class="drum-pad" id="Q">
+            <audio class="clip" id="Q" src=""></audio>
+            <button class="btn">q</button>
+          </div>
+          <div class="drum-pad" id="W">
+            <audio class="clip" id="W" src=""></audio>
+            <button class="btn">w</button>
+          </div>
+          <div class="drum-pad" id="E">
+            <audio class="clip" id="E" src=""></audio>
+            <button class="btn">e</button>
+          </div>
+          <div class="drum-pad" id="A">
+            <audio class="clip" id="A" src=""></audio>
+            <button class="btn">a</button>
+          </div>
+          <div class="drum-pad" id="S">
+            <audio class="clip" id="S" src=""></audio>
+            <button class="btn">s</button>
+          </div>
+          <div class="drum-pad" id="D">
+            <audio class="clip" id="D" src=""></audio>
+            <button class="btn">d</button>
+          </div>
+          <div class="drum-pad" id="Z">
+            <audio class="clip" id="Z" src=""></audio>
+            <button class="btn">z</button>
+          </div>
+          <div class="drum-pad" id="X">
+            <audio class="clip" id="X" src=""></audio>
+            <button class="btn">x</button>
+          </div>
+          <div class="drum-pad" id="C">
+            <audio class="clip" id="C" src=""></audio>
+            <button class="btn">c</button>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="control" id="power-control">
+            <p>Power</p>
+            <div class="options">
+              <p>off</p>
+              <p>on</p>
+            </div>
+            <div class="select" id="power">
+              <div class="inner"></div>
+            </div>
+          </div>
+          <p id="display">Heater Kit</p>
+          <div class="volume">
+            <p>Volume</p>
+            <input
+              type="range"
+              name="volume"
+              id="volume-range"
+              value="0"
+              min="0"
+              max="100"
+              onmousemove="showVolume(this.value)"
+            />
+          </div>
+          <div class="control">
+            <p>Bank</p>
+            <div class="options">
+              <p>1</p>
+              <p>2</p>
+            </div>
+            <div class="select" id="bank">
+              <div class="inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Designed by <a href="http://github.com/smartray">ray</a></p>
+      </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
